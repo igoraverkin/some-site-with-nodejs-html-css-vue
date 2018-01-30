@@ -9,3 +9,10 @@ body{
 .name_of_cathedral{
     text-align: center;
 }
+
+.main_class li{
+    margin: 0px;
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+}
