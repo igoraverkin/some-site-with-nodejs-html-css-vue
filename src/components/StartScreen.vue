@@ -1,16 +1,16 @@
 <template>
   <div>
-      <button class="btn btn-success" @click="$emit('toMainPage')">
+    <router-link  :to="{ path: '/mainpage'}" >
+      <button class="btn btn-success">
       <img src="../assets/nya.jpg">
       </button>
-
+      </router-link>
   </div>
+  
 </template>
 
 <script>
 export default {
-  methods:{
-  }
 }
 </script>
 

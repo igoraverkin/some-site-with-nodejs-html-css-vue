@@ -1,25 +1,43 @@
 <template>
-<div class="main_class">
+<form>
+    <router-link :to="{ path: '/'}" >
+    <button >Back</button>
+    </router-link>
 
-    <button @click="$emit('backToStartScreen')">Back</button>
+    <router-link :to="{ path: '/contacts'}" class="contact-router" >
+      <a class="btn btn-success" >CONTACTS
+      </a><br>
+    </router-link>
 
-    <div> <em>Кафедра</em><br> </div>
-    <button @click="$emit('toNavigationPage')">
-    <div class="theology_culture_and_art" ><strong>ТЕОЛОГИЯ КУЛЬТУРА И ИСКУССТВО</strong> <br></div>
+    <router-link :to="{ path: 'theology-culture-and-art'}" append>
+    <button>
+    <div class="theology-culture-and-art">ТЕОЛОГИЯ КУЛЬТУРА И ИСКУССТВО</div>
+    </button><br>
+    </router-link>
+
+    <router-link :to="{ path: 'domestic-and-foreign-history'}" append>
+    <button>
+    <div class="domestic-and-foreign-history" >ОТЕЧЕСТВЕННАЯ И ЗАРУБЕЖНАЯ ИСТОРИЯ</div>
     </button>
-            
-    <div> <em>Кафедра</em><br> </div>
-    <div class="domestic_and_foreign_history" ><strong>ОТЕЧЕСТВЕННАЯ И ЗАРУБЕЖНАЯ ИСТОРИЯ</strong> <br></div>
+    </router-link>  
 
-</div>
+</form>
 </template>
+
 <script>
 export default {
-  
+
 }
 </script>
 
 <style scoped>
+form  {
+    background: url(../assets/nya.jpg) no-repeat;
+    background-position: center;
+}
+button {
+    color:purple;
+}
 
 </style>
 
